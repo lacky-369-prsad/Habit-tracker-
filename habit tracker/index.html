@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Habit & Mood Tracker</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="app">
+            <header>
+                <h1>Habit & Mood Tracker</h1>
+                <p id="dateToday"></p>
+            </header>
+
+<section class="mood-section">
+    <h2>How's your day?</h2>
+    <div class="mood-picker">
+        <button class="mood-btn" data-mood="😄">😄</button>
+        <button class="mood-btn" data-mood="🙂">🙂</button>
+        <button class="mood-btn" data-mood="😐">😐</button>
+        <button class="mood-btn" data-mood="😔">😔</button>
+        <button class="mood-btn" data-mood="😢">😢</button>
+    </div>
+</section>
+
+<section class="habit-section">
+    <h2>Today's Habits</h2>
+    <form id="habitForm">
+        <input type="text" id="habitInput" placeholder="Add a habit..." autocomplete="off" required>
+        <button type="submit">Add</button>
+    </form>
+    <ul id="habitList"></ul>
+</section>
+
+<section class="calendar-section">
+    <h2>This Month</h2>
+    <div class="calendar-nav">
+        <button id="prevMonth">◀</button>
+        <span id="monthLabel"></span>
+        <button id="nextMonth">▶</button>
+    </div>
+    <div id="calendarGrid" class="calendar-grid"></div>
+</section>
+
+<section class="streak-section">
+<h2>Streaks</h2>
+<div id="streakList"></div>
+</section>
+
+<footer class="contact">
+    <a href="https://github.com/lacky-369-prsad" target="_blank">GitHub</a>
+    <a href="https://instagram.com/@lacky.369" target="_blank">Instagram</a>
+    <a href="https://www.linkedin.com/in/lacky-prasad-0070b9368?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
+    <a href="mailto:lackyprasad52@gmail.com">Email</a>
+</footer>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
