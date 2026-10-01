@@ -35,7 +35,7 @@ moodButtons.forEach(btn => {
    btn.addEventListener('click', () =>{
     moodButtons.forEach(b => b.classList.remove('selected'));
     btn.classList.add('selected');
-    moodLog[todDaKey()] = btn.dataset.mood;
+    moodLog[todayKey()] = btn.dataset.mood;
     saveAll();
     renderCalendar();
    });
@@ -66,7 +66,7 @@ function renderHabits() {
           <button class="habit-delete">Remove</button>
         `;
 
-        li.querySelector('input').addEvenListener('change', (e) => {
+        li.querySelector('input').addEventListener('change', (e) => {
           habitLog[key][habit.id] = e.target.checked;
           saveAll();
           renderHabits();
@@ -151,7 +151,7 @@ function renderCalendar() {
 
         const cell = document.createElement('div');
         cell.className = 'calendar-day';
-        cell.innerHTML = `<span>${d}</span><span class="day-mood">${mood}</span`;
+        cell.innerHTML = `<span>${d}</span><span class="day-mood">${mood}</span>`;
         calendarGrid.appendChild(cell);
     }
 }
@@ -172,3 +172,6 @@ restoreMoodSelection();
 renderHabits();
 renderStreaks();
 renderCalendar();
+
+console.log("🔥 NEW SCRIPT.JS IS LOADED - TEST 123");
+alert("NEW SCRIPT.JS LOADED!");
