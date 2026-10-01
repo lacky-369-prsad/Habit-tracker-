@@ -172,6 +172,3 @@ restoreMoodSelection();
 renderHabits();
 renderStreaks();
 renderCalendar();
-
-console.log("🔥 NEW SCRIPT.JS IS LOADED - TEST 123");
-alert("NEW SCRIPT.JS LOADED!");
